@@ -47,3 +47,8 @@ workflows:
             branches:
               only: master
         context: serverless-framework-orb-testing
+    - approval_deploy:
+          type: approval
+          filters:
+            branches:
+              only: master
