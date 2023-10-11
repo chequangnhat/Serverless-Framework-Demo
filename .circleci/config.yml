@@ -41,7 +41,6 @@ workflows:
   jobs:
     - test
     - deploy:
-        type: approval
         requires:
           - test
         filters:
