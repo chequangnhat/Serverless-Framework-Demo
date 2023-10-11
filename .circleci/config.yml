@@ -33,7 +33,7 @@ jobs:
           name: Local invoke add function
           command: serverless invoke local --function add --path 'sampleData/data.json'
       - run:
-          command: serverless deploy -v
+          command: sls deploy -v
           name: deploy
 
 workflows:
